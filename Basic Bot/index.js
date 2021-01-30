@@ -2,9 +2,18 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require('./config.json');
 
-client.once('ready', async () => {
+client.on('ready', async () => {
     console.log('Bot is on!');
 
+    const array = ['test', 'test2', 'hello'];
+
+    const randomizer = Math.floor(Math.random() * (array.length - 1) + 1);
+
+    client.user.setActivity(array[randomizer], { type: 'WATCHING' })
+    setInterval(() => {
+        client.user.setActivity(array[randomizer], { type: 'WATCHING' });
+    }, 30000)
+    
     /*Get command(s)*/console.log(await client.api.applications(client.user.id).commands.get()); 
 
     /*Create command*/client.api.applications(client.user.id).commands.post({ 
