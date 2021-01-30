@@ -12,8 +12,17 @@ for (const file of commandFiles) {
     client.commands.set(command.name, command);
 }
 
-client.once('ready', async () => {
+client.on('ready', async () => {
     console.log('Bot is on!');
+    
+    const array = ['test', 'test2', 'hello'];
+
+    const randomizer = Math.floor(Math.random() * (array.length - 1) + 1);
+
+    client.user.setActivity(array[randomizer], { type: 'WATCHING' })
+    setInterval(() => {
+        client.user.setActivity(array[randomizer], { type: 'WATCHING' });
+    }, 30000)
 
     /*Get command(s)*/console.log(await client.api.applications(client.user.id).commands.get()); 
 
