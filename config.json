@@ -1,3 +1,4 @@
 {
-    "token": "super-secret-token"
+    "token": "super-secret-token",
+    "prefix": "!"
 }
