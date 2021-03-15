@@ -1,0 +1,4 @@
+{
+    "token": "super-secret-token",
+    "prefix": ["prefix-1", "prefix-2"]
+}
