@@ -1,0 +1,4 @@
+{
+    "token": "super-secret-token",
+    "bannedWords": ["word1", "word2"]
+}
