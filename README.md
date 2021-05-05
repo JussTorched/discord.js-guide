@@ -9,6 +9,7 @@
 * [Join & Leave Msg's](https://github.com/JussTorched/discord.js-guide/tree/join-%26-leave-msg)
 * [Bot Msg On Join](https://github.com/JussTorched/discord.js-guide/tree/msg-on-join)
 * [Eval Command](https://github.com/JussTorched/discord.js-guide/tree/eval-command)
+* [Channel Purge / Nuke](https://github.com/JussTorched/discord.js-guide/tree/Channel-Purge-/-Nuke)
 * [Banned Word Automod](https://github.com/JussTorched/discord.js-guide/tree/Banned-Word-Automod)
 # discord.js-guide
 Code for my YT Discord Bot tutorial Series
